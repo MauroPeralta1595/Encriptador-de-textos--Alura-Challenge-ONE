@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <title>Encriptador de textos</title>
+    </head>
+
+    <body>
+        <main>
+            <section class="encriptacion">
+                <form class="cuadro-encriptacion">
+                    <fieldset class="reemplazar-cuadro">
+                        <div class="cuadro-muñeco">
+                        <img class="munieco" src="img/Muñeco.svg" alt="Persona con lupa buscando un objeto">
+                        </div>
+                        <h2 class="aviso-falta-mensaje">Ningún mensaje fue encontrado</h2>
+                        <p class="aviso-ingrese-texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </fieldset>
+                    <span class="aviso-texto-copiado-invisible">¡Texto copiado!</span>
+                    <button class="boton-copiar-invisible">Copiar</button>
+                </form>
+
+            </section>
+
+            <section class="texto-principal">
+                <h1 class="logo"><img src="img/Logo.png" class="logo" alt="Logotipo de la página">
+                </h1>
+               <form class="formulario-ingresar-texto">
+                    <fieldset class="caja-ingresar-texto">
+                        <textarea name="ingresar-texto" class="ingresar-texto" autofocus placeholder="Ingrese su texto aquí" cols="35" spellcheck="false" onkeypress="return((event.charCode == 32) || (event.charCode >= 97 && event.charCode <= 122))"></textarea>
+                    </fieldset>
+
+                    <fieldset class="botones">
+                        <div class="texto-informativo">
+                            <p class="simbolo-exclamacion">!</p><p class="aviso-minusculas">Solo letras minúsculas y sin acentos</p>
+                        </div>
+
+                        <button class="boton-encriptar">Encriptar</button>
+                        <button class="boton-desencriptar">Desencriptar</button>
+                    </fieldset>
+                </form>
+            </section>
+
+            
+        </main>
+        <footer> 
+            <p>Desafio Alura - Programa ONE - Mauro Alesandro Peralta - 2022</p>
+        </footer>
+        <script src="js/encriptar-desencriptar-texto.js"></script>
+        <script src="js/boton-encriptar-texto.js"></script>
+        <script src="js/boton-desencriptar-texto.js"></script>
+        <script src="js/boton-copiar-texto.js"></script>
+        
+    </body>
+
+
+</html>
