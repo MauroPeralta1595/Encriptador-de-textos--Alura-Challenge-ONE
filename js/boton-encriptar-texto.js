@@ -6,10 +6,9 @@ botonEncriptar.addEventListener('click', function (event) {
 
     let capturarTexto = document.querySelector('.ingresar-texto');
     //Uso este if para evitar que se ingrese texto vacío
-    if (capturarTexto.value.length === 0 || capturarTexto.value.trim().length === 0) {
+    if (capturarTexto.value.length === 0 || capturarTexto.value.trim().length === 0 || validarEntrada(capturarTexto.value)){
         return;
-
-    } else {
+    }else {
         let vocales = ['e', 'i', 'a', 'o', 'u']; //defino las vocales a usar en su orden.
         let reemplazo = ['enter', 'imes', 'ai', 'ober', 'ufat']; // defino los reemplazos de cada vocal (también en orden).
         let textoEncriptado = encriptarDesencriptarTexto(capturarTexto.value, vocales, reemplazo); // paso la función para encriptar/desencriptar.
@@ -26,3 +25,4 @@ botonEncriptar.addEventListener('click', function (event) {
         }
     }
 })
+
