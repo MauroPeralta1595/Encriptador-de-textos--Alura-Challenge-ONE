@@ -1,12 +1,11 @@
 let botonDesencriptar = document.querySelector('.boton-desencriptar');
 
-
 botonDesencriptar.addEventListener('click',function(event){
     event.preventDefault();
 
     let capturarTexto = document.querySelector('.ingresar-texto');
 
-    if (capturarTexto.value.length === 0 || capturarTexto.value.trim().length === 0){
+    if (capturarTexto.value.length === 0 || capturarTexto.value.trim().length === 0 || validarEntrada(capturarTexto.value)){
         return
 
     }else {
@@ -19,7 +18,7 @@ botonDesencriptar.addEventListener('click',function(event){
         cuadroTexto.innerHTML = '<textarea readonly class="texto-salida">';
         let textoSalida = document.querySelector('.texto-salida');
         textoSalida.innerText = textoDesencriptado;
-        capturarTexto.value = '';
+        capturarTexto.value ='';
 
         if(validacionBotonCopiar === 0){
             botonCopiar.classList.replace('boton-copiar-invisible','boton-copiar-visible');
