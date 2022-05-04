@@ -255,3 +255,30 @@ footer p {
     margin: 0 0 .3rem 2rem;
 }
 
+.error{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #0A3871;
+    height: 70%;
+    background-color: #F3F5FC;
+    text-align: start;
+    resize: none;
+    margin-left: 6rem;
+    border:2px solid rgba(255, 0, 0, 0.527);
+    border-radius: 5px;
+}
+
+.error-aviso{
+    text-align: start;
+    margin: 0 .5rem;
+    color: rgb(255, 0, 0);
+    opacity: 0.8;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: .8rem;
+    line-height: 150%;
+    display: inline-block;
+}
