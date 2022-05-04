@@ -25,4 +25,4 @@ botonDesencriptar.addEventListener('click',function(event){
             validacionBotonCopiar++;
         }
     }   
-})
+});
