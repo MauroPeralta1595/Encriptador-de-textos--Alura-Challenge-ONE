@@ -7,4 +7,4 @@ function encriptarDesencriptarTexto(texto,expresion1,expresion2){ //esta funció
     }
 
     return texto; //la salida es mi texto que puede estar codificado o decodificado
-};
+}
