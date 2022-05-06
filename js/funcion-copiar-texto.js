@@ -12,4 +12,4 @@ function copiarAlPortapapeles(elemento) {
   
     document.body.removeChild(oculto);
   
-  };
+  }
