@@ -281,6 +281,7 @@ button:hover{
     margin-left: 6rem;
     border:2px solid rgba(255, 0, 0, 0.527);
     border-radius: 5px;
+    color: #710a0a;
 }
 
 .error-aviso{
