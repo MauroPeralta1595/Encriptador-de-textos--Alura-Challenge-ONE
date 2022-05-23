@@ -20,8 +20,9 @@ main{
 .encriptacion{
     float:right;
     display:block;
-    width:32%;
+    width:25%;
     height: 100%;
+    margin: 0 1.7rem;
 }
 
 .cuadro-encriptacion{
@@ -30,7 +31,7 @@ main{
     border-radius: 2rem;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     height: 90.9%;
-    width:80%;
+    width:100%;
     display: inline-block;
     text-align: center;
     position:relative;
@@ -310,7 +311,7 @@ footer p {
 }
 
 .logos-enlaces {
-    width: 3%;
+    width: 3.5%;
     margin: 0 .2rem;
     transition: .8s;
 }
@@ -319,19 +320,21 @@ footer p {
 }
 
 
-@media (max-width: 425px){
+@media (max-width: 430px){
     main{
         width: 100%;
         height: 900px;
         position:relative;
        
     }
+
     .texto-principal{
         position:absolute;
         top:0;
         width:100%;
         height: 50%;
     }
+
     .caja-ingresar-texto{
         margin: 1rem auto;
         text-align: center;
@@ -340,11 +343,12 @@ footer p {
     }
 
     .botones{
-        margin: 1rem auto 0 auto;
+        margin: .5rem auto 0 auto;
     }
 
     .texto-informativo{
-        margin-left: 2rem;
+       display:inline-block;
+       margin: 1rem auto;
 
     }
 
@@ -364,7 +368,7 @@ footer p {
         font-size:  1.7rem;
         color: #0A3871;
         height: 82%;
-        width:90%;
+        width:85%;
         background-color: #F3F5FC;
         text-align: start;
         resize: none;
@@ -399,10 +403,11 @@ footer p {
 
     .cuadro-encriptacion{
         display:inline-block;
-        margin: 0 1.25rem;
+        margin: 1rem auto;
         height: 100%;
         width:87%;
         position: absolute;
+        left: 7%;
         bottom: 0;
     }
 
@@ -417,6 +422,9 @@ footer p {
         height: 0%;
     }
 
+    footer {
+        margin: 1rem auto;
+    }
     footer p {
         font-family: 'Inter';
         font-style: normal;
@@ -463,5 +471,624 @@ footer p {
 
     .aviso-texto-copiado-invisible{
         margin: .5rem auto .1rem auto;
+    }
+}
+
+@media (max-width: 529px) and (min-width:431px){
+
+    main{
+        width: 100%;
+        height: 900px;
+        position:relative;
+       
+    }
+
+    .texto-principal{
+        position:absolute;
+        top:0;
+        width:100%;
+        height: 50%;
+    }
+
+    .caja-ingresar-texto{
+        margin: 1rem auto;
+        text-align: center;
+        height: 60%;
+        width: 88%;
+    }
+
+    .botones{
+        margin: .1rem auto 0 auto;
+    }
+
+    .texto-informativo{
+       display:inline-block;
+       margin: 1rem auto;
+
+    }
+
+    .caja-logo{
+        width:50%;
+    }
+    .logo{
+        text-align: left;
+        margin:.7em auto;
+        width:60%;
+    }
+
+    .ingresar-texto{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size:  1.7rem;
+        color: #0A3871;
+        height: 82%;
+        width:85%;
+        background-color: #F3F5FC;
+        text-align: start;
+        resize: none;
+        border:none;
+        margin:auto;
+    }
+    
+    .ingresar-texto::placeholder{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.7rem;
+        color: #0A3871;
+    }
+    
+    .error{
+        color: #710a0a;
+        background-color: #F3F5FC;
+        border:2px solid rgba(255, 0, 0, 0.527);
+        border-radius: 5px;
+    }
+
+    .encriptacion{
+        float:none;
+        position:absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40%;
+        margin: 2rem auto;
+
+    }
+
+    .cuadro-encriptacion{
+        display:inline-block;
+        margin: 1rem auto;
+        height: 100%;
+        width:87%;
+        position: absolute;
+        left: 7%;
+        bottom: 0;
+    }
+
+    .munieco{
+        width: 0%;
+        height: 0%;
+    }
+
+    .cuadro-muñeco{
+        width: 0%;
+        margin: 0;
+        height: 0%;
+    }
+
+    footer {
+        margin: 1rem auto;
+    }
+    footer p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: .9rem;
+        color: #0A3871;
+        margin: .5rem auto;
+        display:inline-block;
+    }
+
+    .logos-enlaces {
+        display:inline;
+        margin: 0 auto;
+        width: 15%;
+        margin: 0 .2rem .5rem .2rem;
+        transition: .8s;
+        position:relative;
+        left: 35%;
+    }
+
+    .cuadro-muñeco{
+        position:static;
+    }
+
+    .aviso-falta-mensaje {
+        margin: 1rem 2.5rem;
+        position: absolute;
+        top: 4.5rem;
+    }
+
+    .aviso-ingrese-texto {
+        margin: 1rem 2.5rem;
+        position: absolute;
+        top: 10rem;
+    }
+
+    .boton-copiar-visible{
+        height: 13%;
+    }
+
+    .reemplazar-cuadro{
+        height: 71%;
+    }
+
+    .aviso-texto-copiado-invisible{
+        margin: .5rem auto .1rem auto;
+    }
+
+}
+
+@media (max-width: 701px) and (min-width:530px){
+    main{
+        width: 100%;
+        height: 950px;
+        position:relative;
+       
+    }
+
+    .texto-principal{
+        position:absolute;
+        top:0;
+        width:100%;
+        height: 60%;
+    }
+
+    .caja-ingresar-texto{
+        margin: .5rem auto 0 auto;
+        text-align: center;
+        height: 60%;
+        width: 88%;
+    }
+
+    .botones{
+        display:inline-block;
+        margin: .1rem auto 0 auto;
+        width: 100%;
+        height: 35%;
+    }
+    .aviso-minusculas{
+        display:inline-block;
+        text-align: center;
+    }
+
+    .boton-encriptar{
+        width: 40%;
+    }
+
+    .boton-desencriptar{
+        width: 40%;
+    }
+
+    .texto-informativo{
+       margin: 0 0 .5rem 3.5rem;
+       display:block;
+       text-align: left;
+
+    }
+
+    .caja-logo{
+        width:50%;
+    }
+
+    .logo{
+        text-align: left;
+        margin:.7em auto;
+        width:60%;
+    }
+
+    .formulario-ingresar-texto{
+        width:100%;
+        height: 80%;
+    }
+
+    .ingresar-texto{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size:  1.7rem;
+        color: #0A3871;
+        height: 82%;
+        width:85%;
+        background-color: #F3F5FC;
+        text-align: start;
+        resize: none;
+        border:none;
+        margin:auto;
+    }
+    
+    .ingresar-texto::placeholder{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.7rem;
+        color: #0A3871;
+    }
+    
+    .error{
+        color: #710a0a;
+        background-color: #F3F5FC;
+        border:2px solid rgba(255, 0, 0, 0.527);
+        border-radius: 5px;
+    }
+
+    .encriptacion{
+        float:none;
+        position:absolute;
+        bottom: 0;
+        width: 100%;
+        height: 45%;
+        margin: 1rem auto;
+
+    }
+
+    .cuadro-encriptacion{
+        display:inline-block;
+        margin: 1rem auto;
+        height: 87%;
+        width:87%;
+        position: absolute;
+        left: 7%;
+        bottom: 0;
+    }
+
+    .munieco{
+        width: 0%;
+        height: 0%;
+    }
+
+    .cuadro-muñeco{
+        width: 0%;
+        margin: 0;
+        height: 0%;
+    }
+
+    footer {
+        margin: 1rem auto;
+    }
+    
+    footer p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: .9rem;
+        color: #0A3871;
+        margin: 1rem auto;
+        display: block;
+    }
+
+    .logos-enlaces {
+        display:inline;
+        margin: 0 auto;
+        width: 12%;
+        margin: 0 .2rem .5rem 1rem;
+        transition: .8s;
+        position:relative;
+        left: 35%;
+    }
+
+    .cuadro-muñeco{
+        position:static;
+    }
+
+    .aviso-falta-mensaje {
+        display:inline-block;
+        margin: 3rem auto;
+        text-align: center;
+    }
+
+    .aviso-ingrese-texto {
+        display:inline-block;
+        margin: 2rem auto;
+        text-align: center;
+    }
+
+    .boton-copiar-visible{
+        height: 13%;
+        display:block;
+    }
+
+    .reemplazar-cuadro{
+        height: 71%;
+    }
+
+    .aviso-texto-copiado-invisible{
+        margin: .5rem auto .1rem auto;
+        display:inline-block;
+    }
+}
+
+@media (max-width: 879px) and (min-width:702px){
+    main {
+        height: 550px;
+    }
+    .texto-principal{
+        width: 70%;
+        height: 82%;
+    }
+    .caja-ingresar-texto{
+        width:70%;
+        height: 70%;
+    }
+
+    .ingresar-texto{
+        width:90%;
+        height: 90%;
+    }
+
+    .botones {
+        display:inline-block;
+        width:70%;
+        margin:0 auto;
+    }
+
+
+    .encriptacion{
+        height: 100%;
+        width:33%;
+    }
+
+    .reemplazar-cuadro{
+        height: 76%;
+    }
+
+    .boton-copiar-visible{
+        height: 10%;
+        width:90%;
+    }
+
+    .texto-informativo{
+        display:inline-block;
+        margin: .5rem auto;
+    }
+    .formulario-ingresar-texto{
+        height: 83%;
+    }
+
+    footer p{
+        margin: 1.3rem;
+    }
+    .logos-enlaces{
+        width:6%;
+    }
+}
+
+@media (max-width: 1104px) and (min-width:880px){
+
+    main{
+        height: 550px;
+    }
+
+    .texto-principal{
+        width:70%;
+        height: 100%;
+    }
+
+    .formulario-ingresar-texto{
+        height: 78%;   
+    }
+
+    .caja-ingresar-texto{
+        height: 80%;
+        width: 70%;
+    }
+
+    .ingresar-texto{
+        width: 110%;
+        height: 90%;
+    }
+
+    .encriptacion{
+        height: 100%;
+        margin: 0 .5rem 0 0;
+        width: 28%;
+    }
+
+    footer p{
+        margin: 1.3rem 1rem 1.3rem 3rem;
+    }
+
+    .logos-enlaces{
+        width:4.5%;
+    }
+
+    .reemplazar-cuadro{
+        height: 78%;
+    }
+
+    .boton-copiar-visible{
+        width: 90%;
+        height: 10%;
+        margin-bottom: 1rem;
+    }
+
+
+}
+
+@media (max-width: 1699px) and (min-width:1511px){
+
+    html{
+        font-size: 100%;
+    }
+    
+    main{
+     width:100%;
+     height: 650px;
+    }
+
+    .caja-logo{
+        margin: 1rem;
+    }
+
+    .ingresar-texto{
+        font-size:1.5rem;
+    }
+
+    .ingresar-texto::placeholder{
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: #0A3871;
+    }
+
+    .boton-copiar-visible{
+        width:90%;
+    }
+}
+
+@media (max-width: 1814px) and (min-width:1700px){
+
+    html{
+        font-size: 100%;
+    }
+    
+    main{
+     width:100%;
+     height: 750px;
+    }
+
+    .caja-logo{
+        margin: 1rem;
+    }
+
+    .ingresar-texto{
+        font-size:1.5rem;
+    }
+
+    .ingresar-texto::placeholder{
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: #0A3871;
+    }
+
+    .boton-copiar-visible{
+        width:90%;
+    }
+}
+
+@media (max-width: 2128px) and (min-width:1815px){
+
+    html{
+        font-size: 100%;
+    }
+    
+    main{
+     width:100%;
+     height: 900px;
+    }
+
+    .caja-logo{
+        margin: 1rem;
+    }
+
+    .ingresar-texto{
+        font-size:1.5rem;
+    }
+
+    .ingresar-texto::placeholder{
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: #0A3871;
+    }
+
+    .boton-copiar-visible{
+        width:90%;
+    }
+}
+
+@media (max-width: 2720px) and (min-width:2129px){
+    html{
+        font-size: 170%;
+    }
+    
+    main{
+     width:100%;
+     height: 1150px;
+    }
+
+    .caja-logo{
+        margin: 1rem;
+    }
+
+    .ingresar-texto{
+        font-size:1.5rem;
+    }
+
+    .ingresar-texto::placeholder{
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: #0A3871;
+    }
+
+    .boton-copiar-visible{
+        width:90%;
+    }
+}
+
+@media (max-width: 4080px) and (min-width:3500px){
+    html{
+        font-size: 220%;
+    }
+    
+    main{
+     width:100%;
+     height: 1750px;
+    }
+
+    .caja-logo{
+        margin: 1rem;
+    }
+
+    .ingresar-texto{
+        font-size:1.5rem;
+    }
+
+    .ingresar-texto::placeholder{
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: #0A3871;
+    }
+
+    .boton-copiar-visible{
+        width:90%;
+    }
+}
+
+@media (max-width: 5500px) and (min-width:4081px){
+    html{
+        font-size: 220%;
+    }
+    
+    main{
+     width:100%;
+     height: 2400px;
+    }
+
+    .caja-logo{
+        margin: 1rem;
+    }
+
+    .ingresar-texto{
+        font-size:1.5rem;
+    }
+
+    .ingresar-texto::placeholder{
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: #0A3871;
+    }
+
+    .boton-copiar-visible{
+        width:90%;
     }
 }
